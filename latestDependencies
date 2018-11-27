@@ -1,0 +1,2 @@
+rm -rf node_modules
+yarn add apollo-server apollo-server-express graphql graphql-tools nodemon pg typeorm typescript @types/graphql graphql-subscriptions graphql-playground-middleware-express

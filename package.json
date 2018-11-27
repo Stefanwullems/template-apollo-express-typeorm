@@ -1,0 +1,26 @@
+{
+  "name": "thub-server",
+  "version": "0.1.0",
+  "main": "target/index.js",
+  "repository": "git@github.com:Stefanwullems/thub-server.git",
+  "author": "Stefanwullems <stefanwullems1998@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/graphql": "^14.0.3",
+    "apollo-server": "^2.2.3",
+    "apollo-server-express": "^2.2.3",
+    "graphql": "^14.0.2",
+    "graphql-playground-middleware-express": "^1.7.8",
+    "graphql-subscriptions": "^1.0.0",
+    "graphql-tools": "^4.0.3",
+    "nodemon": "^1.18.7",
+    "pg": "^7.6.1",
+    "typeorm": "^0.2.9",
+    "typescript": "^3.1.6"
+  },
+  "scripts": {
+    "start": "nodemon .",
+    "compile": "tsc -w",
+    "migration": "typeorm migration:run"
+  }
+}
