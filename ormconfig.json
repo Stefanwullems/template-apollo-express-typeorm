@@ -5,7 +5,7 @@
   "username": "postgres",
   "password": "password",
   "database": "test",
-  "synchronize": true,
+  "synchronize": false,
   "entities": ["target/entity/**/*.js"],
   "migrations": ["target/migration/*.js"],
   "cli": {

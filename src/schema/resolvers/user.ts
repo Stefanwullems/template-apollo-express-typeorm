@@ -20,10 +20,8 @@ export const userMutations = {
 export const userRelations = {
   User: {
     addPet: async function({ id }, { input }) {
-      console.log(input);
-      const { petInput } = input;
       const user = await User.findOne(id);
-      return Pet.create({ ...petInput, user }).save();
+      return Pet.create({ ...input, user }).save();
     },
     async pets({ id }) {
       const user = await User.findOne(id);
